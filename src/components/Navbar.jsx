@@ -18,7 +18,7 @@ const Navbar = () => {
 
   const handleClick = () => {
     axios
-      .post("http://localhost:8080/user/logout", {}, { withCredentials: true })
+      .post("https://emmersion-1.onrender.com/user/logout", {}, { withCredentials: true })
       .then(() => {
         dispatch(setAuthUser(null));
         navigateTo("/login");

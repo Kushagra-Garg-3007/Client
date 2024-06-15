@@ -23,7 +23,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/user/register", formData, { withCredentials: true });
+      const response = await axios.post("https://emmersion-1.onrender.com/user/register", formData, { withCredentials: true });
       navigateTo("/login");
     } catch (error) {
       console.error("Error registering user", error);

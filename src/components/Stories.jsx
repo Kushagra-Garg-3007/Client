@@ -9,7 +9,7 @@ const Stories = () => {
   const authUser = useSelector((state) => state?.userReducer?.authUser?.user);
   const getStories = () => {
     axios
-      .get("http://localhost:8080/story/getStory")
+      .get("https://emmersion-1.onrender.com/story/getStory")
       .then((res) => {
         setStories(res?.data || []);
       })

@@ -21,7 +21,7 @@ const CreateStory = () => {
     event.preventDefault();
     console.log(formData);
     try {
-      const response = await axios.post("http://localhost:8080/story/add", formData, { withCredentials: true });
+      const response = await axios.post("https://emmersion-1.onrender.com/story/add", formData, { withCredentials: true });
       if (response) {
         navigateTo("/home");
       }

@@ -22,7 +22,7 @@ function Login() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8080/user/login", formData, { withCredentials: true });
+      const response = await axios.post("https://emmersion-1.onrender.com/user/login", formData, { withCredentials: true });
       if (response) {
         dispatch(setAuthUser(response.data));
         navigateTo("/home");
