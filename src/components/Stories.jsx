@@ -32,7 +32,7 @@ const Stories = () => {
 
   const handleSubmit = () => {
     axios
-      .post(`http://localhost:8080/story/update/${story._id}`, story, { withCredentials: true })
+      .post(`https://emmersion-1.onrender.com/story/update/${story._id}`, story, { withCredentials: true })
       .then((res) => {
         setShowForm(false);
         getStories();
